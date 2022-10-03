@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+    <title>My first Line Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <!--<img src="images/red_nikes.jpg" alt="Red Nike Shoe">-->
+    <div class="container">
+
+    
+    <header>
+        <a href="#" class="logo">Shoe<span>Brand</span></a>
+        <nav>
+            <svg class ="close" width="90" height="96" viewBox="0 0 90 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M58.2562 33.2625C58.2562 32.85 57.9187 32.5125 57.5062 32.5125L51.3187 32.5406L42 43.65L32.6906 32.55L26.4937 32.5219C26.0812 32.5219 25.7437 32.85 25.7437 33.2719C25.7437 33.45 25.8094 33.6188 25.9219 33.7594L38.1187 48.2906L25.9219 62.8125C25.8086 62.9499 25.7457 63.1219 25.7437 63.3C25.7437 63.7125 26.0812 64.05 26.4937 64.05L32.6906 64.0219L42 52.9125L51.3094 64.0125L57.4969 64.0406C57.9094 64.0406 58.2469 63.7125 58.2469 63.2906C58.2469 63.1125 58.1812 62.9438 58.0687 62.8031L45.8906 48.2813L58.0875 33.75C58.2 33.6188 58.2562 33.4406 58.2562 33.2625Z"
+                    fill="black" />
+                <path
+                    d="M42 6.09375C18.8063 6.09375 0 24.9 0 48.0938C0 71.2875 18.8063 90.0938 42 90.0938C65.1937 90.0938 84 71.2875 84 48.0938C84 24.9 65.1937 6.09375 42 6.09375ZM42 82.9688C22.7438 82.9688 7.125 67.35 7.125 48.0938C7.125 28.8375 22.7438 13.2188 42 13.2188C61.2562 13.2188 76.875 28.8375 76.875 48.0938C76.875 67.35 61.2562 82.9688 42 82.9688Z"
+                    fill="black" />
+            </svg>
+
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Players</a></li>
+            </ul>
+
+        </nav>
+
+        <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white" />
+        </svg>
+    </header>
+    <section class="hero">
+        <h1>Regain your confidence on the court.</h1>
+
+        <p class="subhead">A shoe built with purpose and to take your game to the next level.</p>
+
+        <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z"
+                fill="black" />
+        </svg>
+
+
+    </section>
+
+    <section class="more-info">
+        <div class="feature">
+            <div class="content">
+                <p class="title">LightWeight</p>
+                <p class="description">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>               
+            </div>
+            <img src="images/yellow_nikes.jpg" alt="Green Nike Shoe">
+        </div>
+        <div class="feature left">
+            <div class="content">
+                <p class="title">LightWeight</p>
+                <p class="description">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+            </div>
+            <img src="images/green-nikes.jpg" alt="Green Nike Shoe">
+        </div>
+        <div class="feature">
+            <div class="content">
+                <p class="title">LightWeight</p>
+                <p class="description">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+            </div>
+            <img src="images/pink-nikes.jpg" alt="Green Nike Shoe">
+        
+        </div>
+    </section>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const close = document.querySelector(".close")
+        const nav = document.querySelector("nav")
+
+        menu.addEventListener("click",()=>{
+            nav.classList.add("open-nav")
+
+        })
+
+         close.addEventListener("click", () => {
+                nav.classList.remove("open-nav")
+
+            })
+
+    </script>
+    
+    
+    </body>
+</html>
