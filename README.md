@@ -1,1 +1,0 @@
-# shoe-brand-homepage
