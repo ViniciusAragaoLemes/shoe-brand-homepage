@@ -48,18 +48,21 @@
    .content {
        font-family: Helvetica;
        font-size: 1.2em;
-       text-align: right;
+      /* text-align: right;*/
        padding-top: 1em;
        padding-left: 1em;
        padding-right: 1em;
+       box-sizing:border-box;
        /*width: 18em;*/
       /* color: #FFFFFF;*/
-      display: grid;
-      grid-template-columns: repeat(2,auto);
+      display: flex;
+    /*grid-template-columns: repeat(2,auto);
       gap: 5em;
-
+*/
    }
-
+*, ::after, ::before {
+    box-sizing: border-box;
+}
    p {
        font-family: Helvetica;
         display: block;
@@ -208,4 +211,54 @@ ul{
     border-radius: 10px;
     border-color: white;
     background-color: white;
+    margin-right: none;
+    size: 100%;
+
+}
+
+#img-list{
+   display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+    box-sizing: border-box;
+   
+}
+
+.subimage{
+  /*  height: 30%;
+    width: 30%;
+    */
+    max-height: 150px;
+  box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#intro-all{
+    grid-template-rows: (2,auto);
+    padding-right: 10em;
+    display: block;
+box-sizing: border-box;
+}
+
+#intro-a{
+    margin-left: 0px;
+    text-align: left;
+    font-size: 1.2em;
+
+}
+
+#intro-b{
+    font-size: .8em;
+    text-align:left;
+    padding-top: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.m-page{
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
 }
